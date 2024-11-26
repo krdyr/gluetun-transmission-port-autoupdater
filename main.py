@@ -1,7 +1,11 @@
 import time
 import json
+import sys
 from port_reader import read_port
 from port_updater import update_port
+
+# Override stdout to always flush
+sys.stdout = open(sys.stdout.fileno(), mode='w', buffering=1)
 
 # Load configuration
 try:
