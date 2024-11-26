@@ -1,5 +1,5 @@
 {
     "gluetun_port_file": "/gluetun/piaportforward.json",
-    "transmission_settings_file": "/settings.json",
+    "transmission_settings_file": "/config/settings.json",
     "update_interval": 3600
 }
