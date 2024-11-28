@@ -9,7 +9,7 @@ sys.stdout = open(sys.stdout.fileno(), mode='w', buffering=1)
 
 # Load configuration
 try:
-    with open("./settings/config.json", "r") as config_file:
+    with open("/config.json", "r") as config_file:
         config = json.load(config_file)
         gluetun_port_file = config.get("gluetun_port_file")
         transmission_settings_file = config.get("transmission_settings_file")
